@@ -49,7 +49,7 @@ def check_raises(func, args, expected_exception=Exception):
 
 def load_module_dynamically():
     """Load the student's module for testing"""
-    module_obj = safely_import_module("game_development_utility_system")
+    module_obj = safely_import_module("skeleton")
     if module_obj is None:
         module_obj = safely_import_module("solution")
     return module_obj
